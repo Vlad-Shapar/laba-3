@@ -1,0 +1,56 @@
+import csv
+import sys
+
+print("Гpyna 1")
+filename= "D:\Документи-ВЛАД\main\python\laba3\group1.txt" 
+text_file = open("D:\Документи-ВЛАД\main\python\laba3\group1.txt", "r")
+reader=csv.reader(text_file, delimiter="\t")
+for str in reader: 
+    print(str)
+text_file.close()
+
+
+print("Гpyna 2")
+filename= "D:\Документи-ВЛАД\main\python\laba3\group2.txt" 
+text_file=open("D:\Документи-ВЛАД\main\python\laba3\group2.txt", "r")
+reader=csv.reader (text_file, delimiter="\t")
+
+for str in reader:
+    print (str) 
+text_file.close()
+
+
+
+print("Група 3")
+filename = "D:\Документи-ВЛАД\main\python\laba3\group3.txt" 
+text_file=open("D:\Документи-ВЛАД\main\python\laba3\group3.txt", "r")
+reader=csv.reader (text_file, delimiter="\t")
+
+for str in reader: 
+    print(str)
+text_file.close()
+
+###################
+print("Гpyna 1")
+text_file = open("D:\students6.txt", "wt")
+text_file.write("Саша Венгер, 0 балів\n")
+text_file.write("Анастасія Савченко, 0 балів\n")
+text_file.write("Андрій Гуназа, 0 балів\n")
+text_file.write("Ігор Корніжко, 0 балів\n")
+text_file.close()
+
+print("Гpyna 2")
+text_file = open("D:\students6.txt", "wt")
+text_file.write("Саша Венгер2, 0 балів\n")
+text_file.write("Анастасія Савченко3, 0 балів\n")
+text_file.write("Андрій Гуназа2, 0 балів\n")
+text_file.write("Ігор Корніжко2, 0 балів\n")
+text_file.close()
+
+print("Гpyna 3")
+text_file = open("D:\students6.txt", "wt")
+text_file.write("Саша Венгер3, 0 балів\n")
+text_file.write("Анастасія Савченко3, 0 балів\n")
+text_file.write("Андрій Гуназа3, 0 балів\n")
+text_file.write("Ігор Корніжко3, 0 балів\n")
+text_file.close()
